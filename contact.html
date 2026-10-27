@@ -3,23 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>商务垂询与项目报备中心 | 苏州微众科技有限公司</title>
+  <title>商务咨询与项目对接 | 苏州微众科技有限公司</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo-mark.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <canvas id="bg-canvas"></canvas>
   <div class="site-wrapper">
     <div id="site-header"></div>
 
+    <div class="page-banner"><img src="assets/img/banner-contact.jpg" alt="明亮的办公空间" /></div>
+
     <section class="hero">
       <div class="container">
-        <div class="hero-eyebrow"><span>EXECUTIVE CONCIERGE & DEAL REGISTRATION · 总裁办直通车与商机保护报备</span></div>
+        <div class="hero-eyebrow"><span>BUSINESS INQUIRY & CONTACT · 商务咨询与需求对接</span></div>
         <h1 class="hero-title">
-          每一次垂询，皆享总代级尊崇礼遇<br />
-          <span class="text-gradient">项目报备 · 算力/Token申领 · 定制评估 · 资金配资</span>
+          专业沟通 · 高效响应<br />
+          <span class="text-gradient">项目对接 · 需求评估 · 方案咨询</span>
         </h1>
         <p class="hero-desc">
-          无论您是寻求正版软件与算力降本的政企CIO，还是手握大单急需原厂授权与资金托底的渠道老友，苏州微众 7×24 小时专家委员会随时待命。
+          无论您是寻求正版商业软件采购、信创适配、智算资源选型、企业系统定制开发的政企用户，还是推进联合交付的渠道集成伙伴，苏州微众科技团队竭诚为您提供专业、及时的方案支持。
         </p>
       </div>
     </section>
@@ -28,8 +33,8 @@
       <div class="container">
         <div class="grid-2">
           <div class="console-box">
-            <h3 style="font-size:22px;margin-bottom:8px;">🚀 在线快速报备与专属方案申领</h3>
-            <p style="font-size:13.5px;color:var(--text-secondary);margin-bottom:24px;">提交后系统将自动生成加密报备编码，30分钟内由对应事业部总经理直联对接。</p>
+            <h3 style="font-size:22px;margin-bottom:8px;">在线需求登记与方案咨询</h3>
+            <p style="font-size:13.5px;color:var(--text-secondary);margin-bottom:24px;">提交后我们将在 1 个工作日内安排业务顾问与您联系。</p>
 
             <form id="mz-contact-form">
               <label style="font-size:13px;color:var(--text-secondary);">您的单位全称 / 渠道伙伴名称 *</label>
@@ -38,69 +43,70 @@
               <div class="grid-2" style="grid-template-columns:1fr 1fr;gap:14px;">
                 <div>
                   <label style="font-size:13px;color:var(--text-secondary);">联系人姓名与职务 *</label>
-                  <input type="text" class="text-input" required placeholder="张总 / IT总监 / 渠道总经理" />
+                  <input type="text" class="text-input" required placeholder="例如：张经理 / 信息化负责人" />
                 </div>
                 <div>
-                  <label style="font-size:13px;color:var(--text-secondary);">手机号码（支持微信同号） *</label>
-                  <input type="tel" class="text-input" required placeholder="138-XXXX-XXXX" />
+                  <label style="font-size:13px;color:var(--text-secondary);">联系电话 *</label>
+                  <input type="tel" class="text-input" required placeholder="手机号码（用于沟通方案）" />
                 </div>
               </div>
 
-              <label style="font-size:13px;color:var(--text-secondary);">核心需求板块（可多选或切换核心意向） *</label>
+              <label style="font-size:13px;color:var(--text-secondary);">核心需求方向 *</label>
               <select class="select-input" required>
-                <option value="software">01. 正版软件采购与信创替代（金山WPS总代 / 微软 / Oracle / Adobe / CAD等）</option>
-                <option value="token">02. 中国电信 × 苏州微众 大模型 Token 批发池 & 算网专线申领（赠5000万测试Token）</option>
-                <option value="compute">03. AIDC GPU算力租赁（H800/H20/昇腾910B）与私有化训推一体机</option>
-                <option value="custom">04. 企业级软件高端定制（CRM / ERP / 车间MES / WMS / 数字孪生）</option>
-                <option value="capital">05. IT渠道大项目报备、原厂底价授权函（MAF）与供应链垫资/过桥资金服务</option>
-                <option value="data">06. 企业数据资产入表融资辅导 / 软件侵权函合规化解 / 私有云文档安全</option>
+                <option value="software">01. 正版商业软件采购与信创方案（协同办公 / 数据库 / 工业软件等）</option>
+                <option value="token">02. 大模型 Token 接口接入与模型服务协同</option>
+                <option value="compute">03. GPU 算力资源调配与本地训推一体机部署</option>
+                <option value="custom">04. 制造业管理软件定制开发（CRM / ERP / 车间MES / WMS 等）</option>
+                <option value="capital">05. 渠道集成商项目协同与商务支持</option>
+                <option value="data">06. 软件资产合规自查与企业数据资源梳理支持</option>
               </select>
 
-              <label style="font-size:13px;color:var(--text-secondary);">预计项目预算或资金需求规模</label>
+              <label style="font-size:13px;color:var(--text-secondary);">预估项目规模</label>
               <select class="select-input">
-                <option>50万 RMB 以内（敏捷采购 / 快速通道）</option>
-                <option>50万 – 300万 RMB（中型政企 / 专班对接）</option>
-                <option>300万 – 1,000万 RMB（大型集采 / 总裁办特批折扣与垫资）</option>
-                <option>1,000万 RMB 以上（战略级工程 / 联合投标与定制资本方案）</option>
+                <option>50 万元以内</option>
+                <option>50 万 – 300 万元</option>
+                <option>300 万 – 1,000 万元</option>
+                <option>1,000 万元以上</option>
               </select>
 
-              <label style="font-size:13px;color:var(--text-secondary);">需求详情或报备终端业主简述（严格保密）</label>
-              <textarea class="text-input" rows="4" placeholder="请简述您需要的软件型号数量、算力/Token规模、定制模块或渠道项目垫资账期诉求..."></textarea>
+              <label style="font-size:13px;color:var(--text-secondary);">需求简要说明（严格保密）</label>
+              <textarea class="text-input" rows="4" placeholder="请简要描述您的业务场景、所需软件型号、算力规模、系统定制模块或期望沟通事宜..."></textarea>
 
-              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">立即加密提交 · 唤醒微众专家专班 →</button>
-              <div id="mz-form-feedback" style="display:none;margin-top:16px;padding:16px;border-radius:10px;background:rgba(16,185,129,0.16);border:1px solid #10b981;color:#ecfdf5;font-size:14px;"></div>
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">提交咨询需求 →</button>
+              <div id="mz-form-feedback" style="display:none;margin-top:16px;padding:16px;border-radius:10px;background:var(--bg);border:1px solid var(--gold);color:var(--ink);font-size:14px;"></div>
             </form>
           </div>
 
           <div style="display:flex;flex-direction:column;gap:20px;">
             <div class="card card-gold">
-              <span class="card-badge gold">HEADQUARTERS · 集团总部</span>
-              <h3 class="card-title">苏州微众科技有限公司（吴中总部基地）</h3>
+              <span class="card-badge gold">HEADQUARTERS · 总部信息</span>
+              <h3 class="card-title">苏州微众科技有限公司</h3>
               <p class="card-desc">
-                <strong>总部地址</strong>：江苏省苏州市吴中经济开发区核心数字产业园<br />
-                <strong>统一社会信用代码/成立</strong>：2011年4月29日成立 · 注册资本1000万元<br />
-                <strong>全国政企与渠道贵宾专线</strong>：400-828-SZMZ / 0512-6658-XXXX<br />
-                <strong>商务与渠道报备邮箱</strong>：bd@szmicrozone.com / channel@szmicrozone.com
+                <strong>总部地址</strong>：江苏省苏州市吴中经济开发区<br />
+                <strong>企业资质</strong>：2011 年 4 月 29 日成立 · 注册资本 1,000 万元人民币<br />
+                <strong>商务咨询邮箱</strong>：bd@szmicrozone.com<br />
+                <strong>渠道合作邮箱</strong>：channel@szmicrozone.com<br />
+                <strong>沟通电话</strong>：请优先通过官方邮箱或在线表单留言，业务团队将在 1 个工作日内与您联系
               </p>
             </div>
 
             <div class="card">
-              <span class="card-badge">REGIONAL HUBS · 苏鲁与长三角四大直属中心</span>
-              <h3 class="card-title">就近响应 · 2小时抵达现场</h3>
+              <span class="card-badge">REGIONAL HUBS · 业务服务节点</span>
+              <h3 class="card-title">区域覆盖与现场响应</h3>
               <ul style="color:var(--text-secondary);font-size:14px;display:flex;flex-direction:column;gap:10px;margin-top:10px;">
-                <li><strong>【苏南制造与研发交付中心】</strong>：苏州工业园区 / 吴中区（辐射无锡、常州、昆山、太仓、张家港、常熟）</li>
-                <li><strong>【江苏政务与信创总分销中心】</strong>：南京市建邺区河西CBD（辐射苏北、苏中党政国企及高校）</li>
-                <li><strong>【山东企业总分销与渠道中心】</strong>：济南市高新区 & 青岛市崂山区（负责山东全省金山WPS及软件渠道体系）</li>
-                <li><strong>【中国电信×微众华东智算节点】</strong>：苏州吴江国家算力枢纽节点 & 上海临港智算中心</li>
+                <li><strong>【苏南制造服务网点】</strong>：苏州市（工业园区、吴中区、昆山等），辐射无锡、常州及周边制造集群</li>
+                <li><strong>【江苏业务服务节点】</strong>：南京市建邺区，服务江苏省内政企、事业单位及高校客户</li>
+                <li><strong>【山东业务对接节点】</strong>：济南市、青岛市，开展山东省内软件产品与渠道业务对接</li>
+                <li><strong>【算力与云服务节点】</strong>：依托长三角核心数据中心节点，提供就近网络与算力资源支持</li>
               </ul>
             </div>
 
             <div class="card">
-              <span class="card-badge emerald">SLA COMMITMENT · 苏州微众三大铁血承诺</span>
+              <span class="card-badge emerald">SERVICE COMMITMENT · 服务准则</span>
               <p class="card-desc" style="margin-bottom:0;">
-                1. <strong>正版保真</strong>：每一套软件License均100%原厂可查验、支持官方审计；<br />
-                2. <strong>渠道铁律</strong>：渠道伙伴报备项目严格锁单保护，绝不飞单、绝不截胡；<br />
-                3. <strong>极速资金</strong>：合规政企项目供应链配资最快 24 小时完成授信批复。
+                1. <strong>正规合规</strong>：所有软件产品均按原厂商业许可规范供货，提供正规授权文件，支持官方查验；<br />
+                2. <strong>商业保密</strong>：严格保护客户商业机密与渠道伙伴项目信息，杜绝信息违规外泄；<br />
+                3. <strong>及时跟进</strong>：明确专人对接，收到需求后 1 个工作日内响应并跟进方案交流。
               </p>
             </div>
           </div>

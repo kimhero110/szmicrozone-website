@@ -3,190 +3,290 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>苏州微众科技有限公司 | 全栈智算底座 · 全球软件总分销 · 中国电信Token战略引擎</title>
-  <link rel="stylesheet" href="assets/style.css" />
+  <title>苏州微众科技有限公司 | 软件、算力与数字化基础设施</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo-mark.svg" />
+  <meta name="description" content="苏州微众科技（SZMICROZONE）成立于2011年，专注正版软件与信创、智算与大模型Token服务、工业软件定制，以及IT渠道项目服务，服务长三角及华东政企客户。" />
+  <meta property="og:title" content="苏州微众科技有限公司 · SZMICROZONE" />
+  <meta property="og:description" content="软件、算力与数字化基础设施，稳健交付。" />
+  <meta property="og:image" content="assets/img/hero.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/home.css" />
 </head>
 <body>
-  <canvas id="bg-canvas"></canvas>
-  <div class="site-wrapper">
-    <div id="site-header"></div>
 
+  <!-- 顶栏 -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="index.html" class="brand">
+        <img class="brand-mark" src="assets/img/logo-mark.svg" alt="" width="44" height="44" />
+        <span class="brand-text"><span class="brand-name">苏州微众科技</span><span class="brand-sub">SZMICROZONE</span></span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="主导航">
+        <a href="index.html" class="active">首页</a>
+        <a href="software-licensing.html">软件与信创</a>
+        <a href="cloud-compute.html">智算与Token</a>
+        <a href="custom-software.html">软件定制</a>
+        <a href="industry-solutions.html">行业方案</a>
+        <a href="about.html">关于我们</a>
+      </nav>
+      <a href="contact.html" class="btn nav-cta">联系我们</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="打开菜单" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
     <section class="hero">
-      <div class="container">
-        <div class="hero-eyebrow">
-          <span>★ 2011–2026 扎根苏州 · 辐射华东 · 链接全球数字生态</span>
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow reveal">Since 2011 · Suzhou, China</div>
+          <h1 class="reveal d1"><span class="nw">软件、算力与数字化，</span><br /><em>稳健交付。</em></h1>
+          <p class="hero-lead reveal d2">
+            苏州微众科技扎根苏州十五年，为长三角政企客户提供正版软件与信创、智算与大模型 Token 服务、工业软件定制，以及 IT 渠道项目服务。
+          </p>
+          <div class="hero-actions reveal d3">
+            <a href="contact.html" class="btn">预约方案咨询 <span class="arr">→</span></a>
+            <a href="software-licensing.html" class="btn btn-ghost">了解软件与信创</a>
+          </div>
+          <p class="hero-en reveal d3">Software · Compute · Digital Infrastructure</p>
         </div>
-        <h1 class="hero-title">
-          掌驭软件主权与澎湃算力<br />
-          构筑政企数字化<span class="text-gradient">星耀级总枢纽</span>
-        </h1>
-        <p class="hero-desc">
-          <strong>苏州微众科技有限公司 (SZMICROZONE)</strong> —— 金山办公（WPS 365）苏鲁区域总分销商、微软/甲骨文/Adobe等50+国际软件巨头核心授权伙伴、<strong>中国电信天翼云智算与大模型 Token 联名服务商</strong>。集“正版软件与信创矩阵、AIDC异构算力、电信级Token网关、CRM/ERP/MES智造软件定制、IT渠道亿元级资金供应链”六大引擎于一体。
-        </p>
-        <div class="hero-actions">
-          <a href="telecom-token.html" class="btn btn-primary">探索中国电信 × 微众 Token 算力舱 →</a>
-          <a href="software-licensing.html" class="btn btn-outline">检阅 50+ 全球软件与信创授权库</a>
-          <a href="channel-capital.html" class="btn btn-outline">IT渠道项目孵化与资金配资</a>
-        </div>
-
-        <div class="metrics-grid">
-          <div class="metric-card">
-            <div class="metric-value">15<span class="metric-unit">载+</span></div>
-            <div class="metric-label">深耕长三角政企IT与软件分销（2011年创立）</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-value">6,800<span class="metric-unit">PFLOPS</span></div>
-            <div class="metric-label">中国电信天翼云×微众可调度智算中心池</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-value">50<span class="metric-unit">+国际/信创大厂</span></div>
-            <div class="metric-label">金山苏鲁总代 · 微软/Oracle/Adobe/西门子等</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-value">¥15<span class="metric-unit">亿+/年</span></div>
-            <div class="metric-label">IT渠道供应链协同规模与项目资金赋能池</div>
-          </div>
+        <div class="hero-visual reveal d2">
+          <img src="assets/img/hero.jpg" alt="城市高层建筑仰视" width="900" height="1125" />
+          <span class="caption">Suzhou · Yangtze River Delta</span>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">SIX SOVEREIGN ENGINES · 六大核心业务版图</span>
-          <h2 class="section-title">不止于软件分销，更是全链路“软件 + 算力 + 智造 + 资本”数字财团级平台</h2>
-          <p class="section-subtitle">从桌面端的每一套合规软件，到云端的每一颗异构GPU与每一百万大模型Token，再到车间MES产线与渠道百亿级资金流转，苏州微众提供闭环式底座支撑。</p>
-        </div>
-
-        <div class="grid-3">
-          <div class="card">
-            <span class="card-badge">引擎 01 · 正版软件与信创总分销</span>
-            <h3 class="card-title">全球通用软件 & 国产信创全矩阵</h3>
-            <p class="card-desc">金山办公（WPS 365）江苏、山东企业总分销商；深度覆盖微软 Microsoft、Oracle 甲骨文、Adobe、VMware、AutoDesk、Siemens 工业软件、Altium、MiniTab、ESET 及麒麟、统信、达梦等全栈信创替代体系。</p>
-            <div class="tag-list">
-              <span class="tag">金山WPS苏鲁总代</span>
-              <span class="tag">Microsoft M365/Azure</span>
-              <span class="tag">Oracle数据库</span>
-              <span class="tag">CAD/PLM工业软件</span>
-            </div>
-            <div style="margin-top:20px;"><a href="software-licensing.html" style="color:var(--accent-cyan);font-weight:700;">进入软件授权中心 →</a></div>
-          </div>
-
-          <div class="card">
-            <span class="card-badge">引擎 02 · 智算云与AIDC异构算力</span>
-            <h3 class="card-title">多云架构集成 & 高密度GPU算力集群</h3>
-            <p class="card-desc">整合天翼云、阿里云、华为云、金山云及苏州本地AIDC机房，提供 NVIDIA H800/H20、华为昇腾 910B 裸金属算力租赁、大模型训推一体机、混合云灾备与 Kubernetes 容器云架构治理。</p>
-            <div class="tag-list">
-              <span class="tag">H800/昇腾910B集群</span>
-              <span class="tag">训推一体机私有化</span>
-              <span class="tag">多云FinOps治理</span>
-            </div>
-            <div style="margin-top:20px;"><a href="cloud-compute.html" style="color:var(--accent-cyan);font-weight:700;">进入云与算力大厅 →</a></div>
-          </div>
-
-          <div class="card card-gold">
-            <span class="card-badge gold">引擎 03 · 中国电信战略联营</span>
-            <h3 class="card-title">电信级大模型 Token 枢纽与算网专线</h3>
-            <p class="card-desc">携手中国电信天翼云息壤平台，利用国家云OTN政企光网直连，为企业提供 DeepSeek、Qwen、星辰、GLM、GPT/Claude 跨境合规网关等企业级高并发 Token 批发、配额池化与零数据留存专属通道。</p>
-            <div class="tag-list">
-              <span class="tag">中国电信天翼云联营</span>
-              <span class="tag">OTN超低时延专线</span>
-              <span class="tag">十亿级Token批发</span>
-            </div>
-            <div style="margin-top:20px;"><a href="telecom-token.html" style="color:#fbbf24;font-weight:700;">进入电信Token中心 →</a></div>
-          </div>
-
-          <div class="card">
-            <span class="card-badge">引擎 04 · 数字化软件高端定制</span>
-            <h3 class="card-title">CRM / ERP / MES / PLM 智能制造定制</h3>
-            <p class="card-desc">扎根苏州全球制造业高地，为半导体、高端装备、汽车零配件、生物医药打造低代码+原生微服务架构的新一代 AI-CRM、集团级 ERP、车间级秒级采集 MES、WMS 智能仓储与数字孪生驾驶舱。</p>
-            <div class="tag-list">
-              <span class="tag">智能车间MES/QMS</span>
-              <span class="tag">集团业财一体ERP</span>
-              <span class="tag">AI赋能CRM中台</span>
-            </div>
-            <div style="margin-top:20px;"><a href="custom-software.html" style="color:var(--accent-cyan);font-weight:700;">进入软件定制工场 →</a></div>
-          </div>
-
-          <div class="card card-gold">
-            <span class="card-badge gold">引擎 05 · 渠道生态与资金护航</span>
-            <h3 class="card-title">IT渠道项目报备、联合投标与资金供应链</h3>
-            <p class="card-desc">为华东乃至全国数百家 ISV、系统集成商（SI）和二级代理商提供厂商底价商务通道、甲级资质联合投标、硬件/软件集采垫资、长账期供应链金融过桥与政企项目全周期风控陪跑。</p>
-            <div class="tag-list">
-              <span class="tag">原厂总代商务兜底</span>
-              <span class="tag">项目集采垫资/过桥</span>
-              <span class="tag">政企招投标赋能</span>
-            </div>
-            <div style="margin-top:20px;"><a href="channel-capital.html" style="color:#fbbf24;font-weight:700;">进入渠道与资金平台 →</a></div>
-          </div>
-
-          <div class="card">
-            <span class="card-badge emerald">引擎 06 · 战略补充：数据要素与安全合规</span>
-            <h3 class="card-title">企业数据资产入表 · 零信任安全 · AI Agent</h3>
-            <p class="card-desc">顺应国家数据局“数据要素×”战略，补充提供企业数据治理、财政部标准数据资产入表评估、金山私有云文档安全防泄漏（DLP）、软件正版化法务合规审计及企业专属知识库 RAG 智能体落地。</p>
-            <div class="tag-list">
-              <span class="tag">数据资产入表咨询</span>
-              <span class="tag">软件合规法务防线</span>
-              <span class="tag">政企安全私有云</span>
-            </div>
-            <div style="margin-top:20px;"><a href="security-data.html" style="color:#34d399;font-weight:700;">进入数据与安全中心 →</a></div>
-          </div>
-        </div>
+    <!-- 数字 -->
+    <section class="numbers">
+      <div class="wrap numbers-grid">
+        <div class="num reveal"><div class="num-value">15<small>年</small></div><div class="num-label">深耕长三角政企 IT</div></div>
+        <div class="num reveal d1"><div class="num-value">50<small>+</small></div><div class="num-label">合作软件与硬件品牌</div></div>
+        <div class="num reveal d2"><div class="num-value">06</div><div class="num-label">核心业务板块</div></div>
+        <div class="num reveal d3"><div class="num-value text">苏 · 鲁</div><div class="num-label">重点服务区域</div></div>
       </div>
     </section>
 
+    <!-- 业务 -->
     <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">TRUTH VERIFICATION · 全网“微众”真假消息权威澄明</span>
-          <h2 class="section-title">拨开全网“微众”同名迷雾：认识真正的「苏州微众科技有限公司」</h2>
-          <p class="section-subtitle">互联网上关于“微众”的信息千头万绪，常有客户将苏州微众与深圳前海微众银行、深圳微众信科混为一谈。我们以公开透明的工商档案与15年产业积淀为您正本清源。</p>
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="eyebrow reveal">What We Do</div>
+          <div>
+            <h2 class="sec-title reveal">从桌面软件到云端算力，<br />一站式的数字化底座。</h2>
+            <p class="sec-desc reveal d1">六大业务板块相互衔接，覆盖采购、部署、开发与项目落地的完整链路。</p>
+          </div>
         </div>
 
-        <div class="data-table-wrap">
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th>对比维度</th>
-                <th>★ 苏州微众科技有限公司（本司 · SZMICROZONE）</th>
-                <th>深圳前海微众银行 / 微众科技（WeBank）</th>
-                <th>深圳微众信用科技（微众信科 Vzoom）</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>成立时间与总部</strong></td>
-                <td><strong>2011年4月29日（早于微众银行3年）· 江苏苏州吴中经济开发区</strong></td>
-                <td>2014年12月 · 广东深圳前海</td>
-                <td>2014年9月 · 广东深圳南山</td>
-              </tr>
-              <tr>
-                <td><strong>企业定位与基因</strong></td>
-                <td><strong>华东头部IT软件总分销商、中国电信算力/Token联营商、工业软件定制与IT渠道供应链资金平台</strong></td>
-                <td>腾讯牵头发起的国内首家民营互联网银行及金融科技输出子公司</td>
-                <td>人民银行备案企业征信机构，主打税银互动与银行信贷风控</td>
-              </tr>
-              <tr>
-                <td><strong>核心拳头业务</strong></td>
-                <td><strong>金山WPS苏鲁总代、微软/甲骨文/Adobe/工业软件、算力租赁、电信Token、CRM/ERP/MES、IT项目资金垫资</strong></td>
-                <td>微粒贷、微业贷、银行核心系统科技输出</td>
-                <td>企业征信报告、大数据风控系统</td>
-              </tr>
-              <tr>
-                <td><strong>真假流言辨析</strong></td>
-                <td colspan="3"><strong>【权威澄清】</strong>网络上凡称“苏州微众是微众银行苏州分行”或“做个人网贷征信修复”均为<strong>虚假误传或李鬼仿冒</strong>！<strong>苏州微众科技有限公司</strong>是独立深耕B端政企与渠道生态15年的硬核科技与软件集团，在IT渠道界享有极高商业信誉。</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div style="margin-top:24px;text-align:right;">
-          <a href="about.html" class="btn btn-outline">查阅完整《全网“苏州微众”真假情报调研与品牌白皮书》 →</a>
+        <div class="cap-list">
+          <a class="cap reveal" href="software-licensing.html">
+            <span class="cap-no">01</span>
+            <h3 class="cap-title">正版软件与信创<small>Licensing &amp; Xinchuang</small></h3>
+            <p class="cap-desc">金山办公（WPS 365）等主流软件的企业级授权与服务，覆盖微软、Oracle、Adobe、Autodesk、西门子，以及麒麟、统信、达梦等国产信创体系。</p>
+            <span class="cap-arrow">→</span>
+          </a>
+          <a class="cap reveal" href="cloud-compute.html">
+            <span class="cap-no">02</span>
+            <h3 class="cap-title">智算云与异构算力<small>Cloud &amp; Compute</small></h3>
+            <p class="cap-desc">整合多家公有云与本地机房资源，提供 GPU 算力租赁、训推一体机、混合云与容器云治理方案。</p>
+            <span class="cap-arrow">→</span>
+          </a>
+          <a class="cap reveal" href="telecom-token.html">
+            <span class="cap-no">03</span>
+            <h3 class="cap-title">大模型 Token 服务<small>Model Token Gateway</small></h3>
+            <p class="cap-desc">依托电信级网络与云平台，为企业提供主流大模型的统一接入、配额管理与专属通道。</p>
+            <span class="cap-arrow">→</span>
+          </a>
+          <a class="cap reveal" href="custom-software.html">
+            <span class="cap-no">04</span>
+            <h3 class="cap-title">工业软件与数字化定制<small>Custom Software</small></h3>
+            <p class="cap-desc">面向制造业的 CRM、ERP、MES、WMS 与数据看板定制，服务半导体、装备、汽车零部件与生物医药企业。</p>
+            <span class="cap-arrow">→</span>
+          </a>
+          <a class="cap reveal" href="channel-capital.html">
+            <span class="cap-no">05</span>
+            <h3 class="cap-title">IT 渠道与项目服务<small>Channel &amp; Projects</small></h3>
+            <p class="cap-desc">为集成商与合作伙伴提供原厂商务对接、联合投标支持与项目全周期陪跑。</p>
+            <span class="cap-arrow">→</span>
+          </a>
+          <a class="cap reveal" href="security-data.html">
+            <span class="cap-no">06</span>
+            <h3 class="cap-title">数据与安全合规<small>Data &amp; Compliance</small></h3>
+            <p class="cap-desc">数据治理、文档安全、软件正版化合规审计，以及企业知识库与智能体落地。</p>
+            <span class="cap-arrow">→</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <div id="site-footer"></div>
-  </div>
-  <script src="assets/app.js"></script>
+    <!-- 图文：算力 -->
+    <section class="section section-alt">
+      <div class="wrap split">
+        <div class="split-media dark reveal">
+          <img src="assets/img/datacenter.jpg" alt="机房服务器机柜" loading="lazy" />
+        </div>
+        <div class="split-body">
+          <div class="eyebrow reveal">Compute</div>
+          <h2 class="reveal d1">为 AI 应用准备的<br />可靠算力与网络。</h2>
+          <p class="reveal d2">从 GPU 资源选型、私有化部署到大模型接入，我们帮助企业在成本、性能与数据安全之间找到合适的平衡。</p>
+          <ul class="points reveal d2">
+            <li><span>i.</span>GPU 集群选型与预算测算</li>
+            <li><span>ii.</span>训推一体机与私有化部署</li>
+            <li><span>iii.</span>多云成本治理与灾备</li>
+          </ul>
+          <a href="cloud-compute.html" class="link-arrow reveal d3">进入智算与算力 <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 图片带 -->
+    <section class="band">
+      <img src="assets/img/corridor.jpg" alt="现代办公空间走廊" loading="lazy" />
+      <div class="band-text">
+        <div class="wrap">
+          <blockquote class="reveal">
+            把复杂留给自己，<br />把清晰、稳定的数字化体验交给客户。
+            <cite>Our Approach</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- 图文：制造业 -->
+    <section class="section">
+      <div class="wrap split reverse">
+        <div class="split-media reveal">
+          <img src="assets/img/workspace.jpg" alt="明亮的办公空间" loading="lazy" />
+        </div>
+        <div class="split-body">
+          <div class="eyebrow reveal">Industry</div>
+          <h2 class="reveal d1">深耕苏州制造业，<br />理解产线与管理的真实需求。</h2>
+          <p class="reveal d2">我们与半导体、高端装备、汽车零部件及生物医药企业长期合作，把行业经验沉淀为可落地的信息化方案。</p>
+          <ul class="points reveal d2">
+            <li><span>i.</span>车间 MES 与质量追溯</li>
+            <li><span>ii.</span>集团业财一体 ERP</li>
+            <li><span>iii.</span>AI 赋能的客户管理平台</li>
+          </ul>
+          <a href="industry-solutions.html" class="link-arrow reveal d3">查看行业方案 <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 品牌说明 -->
+    <section class="section section-alt">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="eyebrow reveal">About the Name</div>
+          <div>
+            <h2 class="sec-title reveal">关于“微众”，<br />请认准我们。</h2>
+            <p class="sec-desc reveal d1">网络上存在多家名称相近的机构，为避免混淆，特此说明。</p>
+          </div>
+        </div>
+        <div class="clarify reveal">
+          <div>
+            <div class="eyebrow">Suzhou Microzone</div>
+            <h3>苏州微众科技有限公司</h3>
+            <dl>
+              <dt>成立</dt><dd>2011 年 4 月 · 江苏省苏州市吴中经济开发区</dd>
+              <dt>定位</dt><dd>面向企业与渠道伙伴的 IT 软件、算力与数字化服务商</dd>
+              <dt>业务</dt><dd>正版软件与信创、算力与 Token 服务、软件定制、渠道项目服务</dd>
+            </dl>
+          </div>
+          <div>
+            <div class="eyebrow">Not Affiliated</div>
+            <h3>与以下机构无隶属关系</h3>
+            <dl>
+              <dt>深圳前海微众银行</dt><dd>独立法人，主营互联网银行业务</dd>
+              <dt>深圳微众信用科技</dt><dd>独立法人，主营企业征信与风控服务</dd>
+              <dt>个人贷款 / 征信修复</dt><dd>本公司不开展面向个人的此类业务，请谨防冒用</dd>
+            </dl>
+          </div>
+        </div>
+        <p class="clarify-note reveal">本公司为独立运营的 B 端服务企业，不提供面向个人用户的借贷或征信产品。如需核实，欢迎通过官方渠道联系我们。</p>
+        <div style="margin-top:32px" class="reveal"><a href="about.html" class="link-arrow">了解公司详情 <span>→</span></a></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="wrap cta-inner">
+        <div>
+          <h2 class="reveal">与我们聊聊您的下一个数字化项目。</h2>
+          <p class="reveal d1">告诉我们您的需求，我们将在一个工作日内与您联系。</p>
+        </div>
+        <a href="contact.html" class="btn btn-gold reveal d2">预约方案咨询 <span class="arr">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand">
+            <img class="brand-mark" src="assets/img/logo-mark.svg" alt="" width="44" height="44" />
+            <span class="brand-text"><span class="brand-name">苏州微众科技</span><span class="brand-sub">SUZHOU MICROZONE TECHNOLOGY</span></span>
+          </a>
+          <p>软件、算力与数字化基础设施服务商，总部位于江苏省苏州市吴中经济开发区。</p>
+        </div>
+        <div>
+          <h4>业务</h4>
+          <ul>
+            <li><a href="software-licensing.html">软件与信创</a></li>
+            <li><a href="cloud-compute.html">智算与算力</a></li>
+            <li><a href="telecom-token.html">Token 服务</a></li>
+            <li><a href="custom-software.html">软件定制</a></li>
+            <li><a href="channel-capital.html">渠道与项目</a></li>
+            <li><a href="security-data.html">数据与安全</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>公司</h4>
+          <ul>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="industry-solutions.html">行业方案</a></li>
+            <li><a href="ecosystem-partners.html">合作伙伴</a></li>
+            <li><a href="cases-insights.html">案例与洞察</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>联系</h4>
+          <ul>
+            <li>江苏省苏州市吴中经济开发区</li>
+            <li><a href="mailto:bd@szmicrozone.com">bd@szmicrozone.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2011–2026 苏州微众科技有限公司 版权所有 · 苏ICP备XXXXXXXX号</span>
+        <span>与深圳前海微众银行、深圳微众信用科技无隶属关系</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 入场动效
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+      }, { threshold: 0.12 });
+      els.forEach(function (e) { io.observe(e); });
+    })();
+    // 移动端菜单
+    (function () {
+      var t = document.getElementById('nav-toggle'), n = document.getElementById('nav-links');
+      t.addEventListener('click', function () {
+        var open = n.classList.toggle('open');
+        t.setAttribute('aria-expanded', open);
+      });
+    })();
+  </script>
 </body>
 </html>
+
