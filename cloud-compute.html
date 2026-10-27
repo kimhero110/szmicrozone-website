@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>智算云与异构算力底座 | 苏州微众科技有限公司</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="site-wrapper">
+    <div id="site-header"></div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-eyebrow"><span>AIDC SOVEREIGN COMPUTE & MULTI-CLOUD · 智算中心与多云管平台</span></div>
+        <h1 class="hero-title">澎湃异构算力 · 驾驭万亿参数<br /><span class="text-gradient">长三角高密液冷智算中心与多云中枢</span></h1>
+        <p class="hero-desc">
+          依托苏州吴江算力枢纽、上海临港与芜湖国家东数西算节点，苏州微众为您提供从公有云代理（天翼云、金山云、阿里云、华为云、Azure）到裸金属 GPU 集群租赁、DeepSeek/Qwen 私有化训推一体机交付的全栈算力服务。
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="grid-2">
+          <div>
+            <span class="section-tag">INTERACTIVE COMPUTE SIZER · 算力在线评估</span>
+            <h2 class="section-title">AIDC 异构算力集群实时配置与预算模拟</h2>
+            <p class="section-subtitle" style="margin-bottom:24px;">
+              支持 RoCE v2 / InfiniBand 400G 无损高速互联，提供按月弹性包卡、按年裸金属独占及算力先用后付（配合微众渠道资金池）三种灵活用算模式。
+            </p>
+            <div class="grid-2" style="grid-template-columns:1fr 1fr;gap:16px;">
+              <div class="card" style="padding:20px;">
+                <h4 style="color:var(--accent-cyan);">InfiniBand 400Gb/s</h4>
+                <p style="font-size:13px;color:var(--text-secondary);margin-top:6px;">全无损参数同步网络，千卡集群线性加速比 &gt; 92%。</p>
+              </div>
+              <div class="card" style="padding:20px;">
+                <h4 style="color:var(--accent-emerald);">PUE &lt; 1.15 冷板液冷</h4>
+                <p style="font-size:13px;color:var(--text-secondary);margin-top:6px;">符合国家T3+/T4国标机房规范，SLA 99.99% 可用性保障。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="console-box">
+            <h3 style="margin-bottom:20px;font-size:20px;">⚡ GPU 算力集群在线选型器</h3>
+            <div class="slider-group">
+              <div class="slider-label">
+                <span>选择加速卡架构</span>
+              </div>
+              <select id="gpu-arch-select" class="select-input">
+                <option value="7800">NVIDIA H800 / H100 (80GB HBM3 · 旗舰训练集群)</option>
+                <option value="4200">NVIDIA H20 (96GB HBM3 · 大模型高吞吐推理首选)</option>
+                <option value="3900">华为昇腾 Ascend 910B (64GB · 政企全国产信创智算)</option>
+                <option value="2100">NVIDIA L40S / RTX 4090D (工业视觉与轻量微调)</option>
+              </select>
+            </div>
+
+            <div class="slider-group">
+              <div class="slider-label">
+                <span>调度卡数规模（8卡/节点）</span>
+                <span id="gpu-count-val" style="color:var(--accent-cyan);">32 卡 (4 节点)</span>
+              </div>
+              <input type="range" id="gpu-count-slider" min="8" max="512" step="8" value="32" />
+            </div>
+
+            <div class="metrics-grid" style="grid-template-columns:1fr 1fr;padding:18px;margin-top:20px;">
+              <div class="metric-card">
+                <div class="metric-label">折合 FP16 峰值稠密算力</div>
+                <div class="metric-value" id="gpu-pflops-out" style="font-size:24px;">63.4 PFLOPS</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-label">微众大客户长租预估价</div>
+                <div class="metric-value" id="gpu-price-out" style="font-size:24px;color:#fbbf24;">¥ 249,600 / 月</div>
+              </div>
+            </div>
+            <div style="margin-top:20px;">
+              <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">锁定长三角机房机柜档期与算力测试券 →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CLOUD & HARDWARE MATRIX · 云与算力全产品线</span>
+          <h2 class="section-title">四大云算力交付形态，满足从科研微调到政企私有化全场景</h2>
+        </div>
+        <div class="grid-4">
+          <div class="card">
+            <span class="card-badge">形态 01</span>
+            <h3 class="card-title">多云金牌总代与MSP代维</h3>
+            <p class="card-desc">中国电信天翼云、金山云、阿里云、华为云、腾讯云、Microsoft Azure 商务返佣优享开户、跨云迁移、等保三级加固与 FinOps 成本压降（平均节省云账单 22%-35%）。</p>
+          </div>
+          <div class="card">
+            <span class="card-badge">形态 02</span>
+            <h3 class="card-title">智算裸金属与算力池租赁</h3>
+            <p class="card-desc">提供单机8卡至千卡级 IB/RoCE 集群，预装 PyTorch、vLLM、DeepSpeed、Megatron-LM 镜像，开箱即训，支持与企业本地机房打通 SD-WAN 专线。</p>
+          </div>
+          <div class="card card-gold">
+            <span class="card-badge gold">形态 03</span>
+            <h3 class="card-title">微众“星枢”训推一体机</h3>
+            <p class="card-desc">面向数据不出域的医院、政府、军工与核心制造厂，软硬一体交付内置 DeepSeek-R1/V3、Qwen2.5 与 WPS AI 的开箱即用私有化大模型一体机。</p>
+          </div>
+          <div class="card">
+            <span class="card-badge">形态 04</span>
+            <h3 class="card-title">长三角高防IDC与灾备云</h3>
+            <p class="card-desc">苏州、无锡、南京、上海高等级 BGP 机柜托管、大带宽独享、两地三中心存储双活容灾（结合 Veritas / Veeam 备份体系）。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="site-footer"></div>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
