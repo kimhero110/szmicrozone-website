@@ -103,6 +103,13 @@ function initSharedChrome() {
                 <li><a href="mailto:rong.s@szmicrozone.com">rong.s@szmicrozone.com</a></li>
                 <li><a href="tel:18662277800">18662277800</a></li>
               </ul>
+              <div style="margin-top:14px;display:flex;align-items:center;gap:12px;">
+                <img src="assets/img/contact-qrcode.png" alt="微信联系二维码" width="76" height="76" style="border-radius:6px;background:#fff;padding:3px;border:1px solid #E6D7C8;display:block;" />
+                <div style="font-size:12px;color:var(--text-secondary);line-height:1.4;">
+                  <strong style="color:var(--ink);display:block;">微信扫码咨询</strong>
+                  快速对接方案与报价
+                </div>
+              </div>
             </div>
           </div>
           <div class="footer-bottom">

@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const f = document.getElementById("wps-footer");
   if (f) {
     f.innerHTML = `<footer class="wf"><div class="w"><div>
-      <div><h5>苏州微众科技有限公司</h5><p>金山办公企业区域总分销商（2026.04.01–2027.03.31）<br>授权编码 NO. JSBG-FXQY20260401</p><p style="margin-top:10px"><a href="mailto:rong.s@szmicrozone.com" style="color:#fff">rong.s@szmicrozone.com</a><br><a href="tel:18662277800" style="color:#fff;font-weight:600">电话：18662277800</a></p></div>
+      <div><h5>苏州微众科技有限公司</h5><p>金山办公企业区域总分销商（2026.04.01–2027.03.31）<br>授权编码 NO. JSBG-FXQY20260401</p><p style="margin-top:8px"><a href="mailto:rong.s@szmicrozone.com" style="color:#fff">rong.s@szmicrozone.com</a><br><a href="tel:18662277800" style="color:#fff;font-weight:600">电话：18662277800</a></p><div style="margin-top:12px;display:flex;align-items:center;gap:10px;"><img src="assets/img/contact-qrcode.png" alt="微信联系二维码" width="68" height="68" style="border-radius:4px;background:#fff;padding:2px;display:block;" /><span style="font-size:12px;color:#A0A6B1;line-height:1.4;"><strong style="color:#fff;display:block;">微信扫码咨询</strong>获取 WPS 报价方案</span></div></div>
       <div><h5>WPS 产品</h5><a href="wps.html#products">WPS 365</a><a href="wps.html#products">WPS Office 政企版</a><a href="wps.html#products">WPS AI</a><a href="wps.html#products">金山文档私有化</a></div>
       <div><h5>应用与资讯</h5><a href="wps-solutions.html">行业应用</a><a href="wps-news.html">新闻资讯</a><a href="wps.html#buy">采购服务</a></div>
       <div><h5>主站</h5><a href="index.html">首页</a><a href="about.html">关于我们</a><a href="contact.html">联系我们</a></div>
