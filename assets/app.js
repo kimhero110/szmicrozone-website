@@ -1,4 +1,4 @@
-﻿/**
+/**
  * SUZHOU MICROZONE TECHNOLOGY CO., LTD. (苏州微众科技有限公司)
  * Shared chrome (navigation / footer), reveal motion, calculators & filters
  */
@@ -6,6 +6,7 @@
 // 主导航（6 项）。group 用于让二级页面高亮所属栏目。
 const NAV_ITEMS = [
   { href: "index.html", title: "首页", group: ["index.html"] },
+  { href: "wps.html", title: "WPS 办公", group: ["wps.html", "wps-solutions.html", "wps-news.html", "wps-article.html"] },
   { href: "software-licensing.html", title: "软件与信创", group: ["software-licensing.html", "security-data.html"] },
   { href: "cloud-compute.html", title: "智算与Token", group: ["cloud-compute.html", "telecom-token.html"] },
   { href: "custom-software.html", title: "软件定制", group: ["custom-software.html"] },
