@@ -101,12 +101,24 @@ document.addEventListener("DOMContentLoaded", () => {
     </div><div class="cp">© ${new Date().getFullYear()} 苏州微众科技有限公司。WPS、金山办公、WPS 365、WPS AI 等为北京金山办公软件股份有限公司的商标或注册商标，本站仅用于说明授权分销的产品。</div></div></footer>`;
   }
 
-  // 证书灯箱
-  document.querySelectorAll("[data-lb]").forEach(img => img.addEventListener("click", () => {
+  // 证书高清灯箱
+  document.querySelectorAll("[data-lb]").forEach(el => el.addEventListener("click", () => {
+    const img = el.tagName === "IMG" ? el : el.querySelector("img");
+    if (!img) return;
     const lb = document.createElement("div");
     lb.className = "lb on";
-    lb.innerHTML = `<img src="${img.src}" alt="${img.alt}">`;
-    lb.onclick = () => lb.remove();
+    lb.innerHTML = `
+      <div style="position:relative;max-width:92vw;max-height:92vh;display:flex;flex-direction:column;align-items:center;background:#fff;border-radius:12px;padding:14px;box-shadow:0 25px 60px rgba(0,0,0,0.5);">
+        <div style="width:100%;display:flex;justify-content:space-between;align-items:center;padding:0 4px 10px;border-bottom:1px solid #EAEAEA;font-size:13px;color:#333;">
+          <span><strong>金山办公企业区域总分销商</strong> · 授权证书原件核验（NO. JSBG-FXQY20260401）</span>
+          <button style="background:#F2F3F5;border:none;border-radius:6px;width:28px;height:28px;font-size:16px;cursor:pointer;color:#555;display:grid;place-items:center;" aria-label="关闭">✕</button>
+        </div>
+        <img src="${img.src}" alt="${img.alt}" style="max-height:80vh;max-width:88vw;object-fit:contain;margin-top:10px;border-radius:4px;border:1px solid #eee;">
+      </div>
+    `;
+    lb.onclick = (e) => {
+      if (e.target === lb || e.target.closest("button")) lb.remove();
+    };
     document.body.appendChild(lb);
   }));
 
