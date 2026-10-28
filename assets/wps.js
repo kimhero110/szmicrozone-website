@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const f = document.getElementById("wps-footer");
   if (f) {
     f.innerHTML = `<footer class="wf"><div class="w"><div>
-      <div><h5>苏州微众科技有限公司</h5><p>金山办公企业区域总分销商（2026.04.01–2027.03.31）<br>授权编码 NO. JSBG-FXQY20260401</p><p style="margin-top:8px"><a href="mailto:rong.s@szmicrozone.com" style="color:#fff">rong.s@szmicrozone.com</a><br><a href="tel:18662277800" style="color:#fff;font-weight:600">电话：18662277800</a></p><div style="margin-top:12px;display:flex;align-items:center;gap:10px;"><img src="assets/img/contact-qrcode.png" alt="微信联系二维码" width="68" height="68" style="border-radius:4px;background:#fff;padding:2px;display:block;" /><span style="font-size:12px;color:#A0A6B1;line-height:1.4;"><strong style="color:#fff;display:block;">微信扫码咨询</strong>获取 WPS 报价方案</span></div></div>
+      <div><h5>苏州微众科技有限公司</h5><p>金山办公企业区域总分销商（2026.04.01–2027.03.31）<br>授权编码 NO. JSBG-FXQY20260401</p><p style="margin-top:8px"><a href="mailto:rong.s@szmicrozone.com" style="color:#fff">rong.s@szmicrozone.com</a><br><a href="tel:18662277800" style="color:#fff;font-weight:600">电话：18662277800</a></p><div data-qr-zoom style="margin-top:14px;display:flex;align-items:center;gap:12px;cursor:zoom-in;"><img src="assets/img/contact-qrcode.png" alt="微信联系二维码" width="100" height="100" style="border-radius:6px;background:#fff;padding:3px;display:block;" /><span style="font-size:12px;color:#A0A6B1;line-height:1.5;"><strong style="color:#fff;display:block;font-size:13px;">微信扫码咨询</strong>获取 WPS 报价方案<br><small style="color:#F3C5C7;">🔍 点击放大</small></span></div></div>
       <div><h5>WPS 产品</h5><a href="wps.html#products">WPS 365</a><a href="wps.html#products">WPS Office 政企版</a><a href="wps.html#products">WPS AI</a><a href="wps.html#products">金山文档私有化</a></div>
       <div><h5>应用与资讯</h5><a href="wps-solutions.html">行业应用</a><a href="wps-news.html">新闻资讯</a><a href="wps.html#buy">采购服务</a></div>
       <div><h5>主站</h5><a href="index.html">首页</a><a href="about.html">关于我们</a><a href="contact.html">联系我们</a></div>
@@ -122,6 +122,35 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     document.body.appendChild(lb);
   }));
+
+  // 二维码全屏放大灯箱
+  document.querySelectorAll("[data-qr-zoom]").forEach(el => {
+    el.style.cursor = "zoom-in";
+    el.addEventListener("click", () => {
+      const lb = document.createElement("div");
+      lb.className = "lb on";
+      lb.style.cssText = "position:fixed;inset:0;background:rgba(0,0,0,0.8);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;z-index:9999;cursor:zoom-out;padding:20px;";
+      lb.innerHTML = `
+        <div style="background:#fff;border-radius:18px;padding:32px;max-width:380px;width:100%;text-align:center;box-shadow:0 25px 60px rgba(0,0,0,0.4);position:relative;cursor:default;">
+          <button style="position:absolute;top:14px;right:16px;background:#f0f2f5;border:none;border-radius:50%;width:32px;height:32px;font-size:16px;cursor:pointer;color:#666;line-height:1;display:grid;place-items:center;" aria-label="关闭">✕</button>
+          <span style="display:inline-block;background:#FFF4E6;color:#A35C00;font-size:12px;font-weight:600;padding:3px 10px;border-radius:6px;margin-bottom:12px;">★ 商务直联 · 微信扫一扫</span>
+          <h3 style="font-size:20px;color:#1F3A5F;margin-bottom:6px;">微信扫码直联商务经理</h3>
+          <p style="font-size:13px;color:#666;margin-bottom:18px;">支持在线对齐商机、产品选型与特惠报价</p>
+          <div style="background:#FAF8F5;border:1px solid #E6D7C8;border-radius:12px;padding:16px;display:inline-block;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+            <img src="assets/img/contact-qrcode.png" alt="微信联系二维码" width="260" height="260" style="display:block;border-radius:8px;" />
+          </div>
+          <div style="margin-top:18px;font-size:13px;color:#333;line-height:1.8;border-top:1px dashed #E5E6EB;padding-top:14px;">
+            <div><strong>直拨电话</strong>：<a href="tel:18662277800" style="color:#D7282F;font-weight:600;">18662277800</a></div>
+            <div><strong>商务邮箱</strong>：<a href="mailto:rong.s@szmicrozone.com" style="color:#D7282F;">rong.s@szmicrozone.com</a></div>
+          </div>
+        </div>
+      `;
+      lb.onclick = (e) => {
+        if (e.target === lb || e.target.closest("button")) lb.remove();
+      };
+      document.body.appendChild(lb);
+    });
+  });
 
   // 行业 Tab
   const tabs = document.querySelectorAll("[data-tab]");

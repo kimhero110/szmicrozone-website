@@ -18,12 +18,42 @@ const NAV_ITEMS = [
 document.addEventListener("DOMContentLoaded", () => {
   initSharedChrome();
   initReveal();
+  initQrZoom();
   initSoftwareFilter();
   initTokenCalculator();
   initComputeCalculator();
   initCapitalSimulator();
   initContactForm();
 });
+
+function initQrZoom() {
+  document.querySelectorAll("[data-qr-zoom]").forEach(el => {
+    el.style.cursor = "zoom-in";
+    el.addEventListener("click", () => {
+      const lb = document.createElement("div");
+      lb.style.cssText = "position:fixed;inset:0;background:rgba(0,0,0,0.8);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;z-index:9999;cursor:zoom-out;padding:20px;";
+      lb.innerHTML = `
+        <div style="background:#fff;border-radius:18px;padding:32px;max-width:380px;width:100%;text-align:center;box-shadow:0 25px 60px rgba(0,0,0,0.4);position:relative;cursor:default;">
+          <button style="position:absolute;top:14px;right:16px;background:#f0f2f5;border:none;border-radius:50%;width:32px;height:32px;font-size:16px;cursor:pointer;color:#666;line-height:1;display:grid;place-items:center;" aria-label="关闭">✕</button>
+          <span style="display:inline-block;background:#FFF4E6;color:#A35C00;font-size:12px;font-weight:600;padding:3px 10px;border-radius:6px;margin-bottom:12px;">★ 商务直联 · 微信扫一扫</span>
+          <h3 style="font-size:20px;color:#1F3A5F;margin-bottom:6px;">微信扫码直联商务经理</h3>
+          <p style="font-size:13px;color:#666;margin-bottom:18px;">支持在线对齐商机、产品选型与特惠报价</p>
+          <div style="background:#FAF8F5;border:1px solid #E6D7C8;border-radius:12px;padding:16px;display:inline-block;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+            <img src="assets/img/contact-qrcode.png" alt="微信联系二维码" width="260" height="260" style="display:block;border-radius:8px;" />
+          </div>
+          <div style="margin-top:18px;font-size:13px;color:#333;line-height:1.8;border-top:1px dashed #E5E6EB;padding-top:14px;">
+            <div><strong>直拨电话</strong>：<a href="tel:18662277800" style="color:#B08D57;font-weight:600;">18662277800</a></div>
+            <div><strong>商务邮箱</strong>：<a href="mailto:rong.s@szmicrozone.com" style="color:#B08D57;">rong.s@szmicrozone.com</a></div>
+          </div>
+        </div>
+      `;
+      lb.onclick = (e) => {
+        if (e.target === lb || e.target.closest("button")) lb.remove();
+      };
+      document.body.appendChild(lb);
+    });
+  });
+}
 
 function initSharedChrome() {
   const currentFile = window.location.pathname.split("/").pop() || "index.html";
@@ -104,11 +134,12 @@ function initSharedChrome() {
                 <li><a href="mailto:rong.s@szmicrozone.com">rong.s@szmicrozone.com</a></li>
                 <li><a href="tel:18662277800">18662277800</a></li>
               </ul>
-              <div style="margin-top:14px;display:flex;align-items:center;gap:12px;">
-                <img src="assets/img/contact-qrcode.png" alt="微信联系二维码" width="76" height="76" style="border-radius:6px;background:#fff;padding:3px;border:1px solid #E6D7C8;display:block;" />
-                <div style="font-size:12px;color:var(--text-secondary);line-height:1.4;">
-                  <strong style="color:var(--ink);display:block;">微信扫码咨询</strong>
-                  快速对接方案与报价
+              <div data-qr-zoom style="margin-top:14px;display:flex;align-items:center;gap:14px;cursor:zoom-in;">
+                <img src="assets/img/contact-qrcode.png" alt="微信联系二维码" width="116" height="116" style="border-radius:8px;background:#fff;padding:4px;border:1px solid #E6D7C8;display:block;box-shadow:0 4px 12px rgba(0,0,0,0.04);" />
+                <div style="font-size:12px;color:var(--text-secondary);line-height:1.5;">
+                  <strong style="color:var(--ink);display:block;font-size:13px;">微信扫码咨询</strong>
+                  快速对接方案与报价<br>
+                  <span style="font-size:11px;color:var(--gold);">🔍 点击可全屏放大</span>
                 </div>
               </div>
             </div>
