@@ -18,7 +18,7 @@ const WPS_NEWS = [
       "本次授权有效期为 2026 年 4 月 1 日至 2027 年 3 月 31 日，授权区域为中国大陆，适用用户类型为非 NAME 用户。具体授权内容以金山办公经销商管理制度及双方签署的协议为准。",
       "## 服务内容",
       "授权期内，微众科技将在授权范围内为企业客户及下游渠道伙伴提供 WPS Office、WPS 365 等金山办公产品的正版采购、选型咨询、部署实施、迁移与培训服务。",
-      "客户可通过本站“采购服务”栏目或商务邮箱 bd@szmicrozone.com 咨询具体方案。"
+      "客户可通过本站“采购服务”栏目或联系 rong.s@szmicrozone.com（电话 18662277800）咨询具体方案。"
     ],
     source: ""
   },
@@ -70,7 +70,7 @@ const WPS_NEWS = [
     summary: "交流会内容涵盖 WPS 365 产品介绍、私有化部署实践与 AI 办公应用演示，具体时间地点将另行通知。",
     body: [
       "本次交流会正在筹备中，拟面向苏州及周边地区的政企、制造业 IT 负责人，内容包括 WPS 365 产品介绍、私有化部署实践分享与 AI 办公应用现场演示。",
-      "具体时间、地点及报名方式将在本页面更新。如有意参加，可先发送邮件至 bd@szmicrozone.com 登记。"
+      "具体时间、地点及报名方式将在本页面更新。如有意参加，可联系 rong.s@szmicrozone.com（电话 18662277800）登记。"
     ],
     source: ""
   }
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const f = document.getElementById("wps-footer");
   if (f) {
     f.innerHTML = `<footer class="wf"><div class="w"><div>
-      <div><h5>苏州微众科技有限公司</h5><p>金山办公企业区域总分销商（2026.04.01–2027.03.31）<br>授权编码 NO. JSBG-FXQY20260401</p><p style="margin-top:10px">bd@szmicrozone.com</p></div>
+      <div><h5>苏州微众科技有限公司</h5><p>金山办公企业区域总分销商（2026.04.01–2027.03.31）<br>授权编码 NO. JSBG-FXQY20260401</p><p style="margin-top:10px"><a href="mailto:rong.s@szmicrozone.com" style="color:#fff">rong.s@szmicrozone.com</a><br><a href="tel:18662277800" style="color:#fff;font-weight:600">电话：18662277800</a></p></div>
       <div><h5>WPS 产品</h5><a href="wps.html#products">WPS 365</a><a href="wps.html#products">WPS Office 政企版</a><a href="wps.html#products">WPS AI</a><a href="wps.html#products">金山文档私有化</a></div>
       <div><h5>应用与资讯</h5><a href="wps-solutions.html">行业应用</a><a href="wps-news.html">新闻资讯</a><a href="wps.html#buy">采购服务</a></div>
       <div><h5>主站</h5><a href="index.html">首页</a><a href="about.html">关于我们</a><a href="contact.html">联系我们</a></div>
