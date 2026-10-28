@@ -11,7 +11,7 @@ const NAV_ITEMS = [
   { href: "cloud-compute.html", title: "智算与Token", group: ["cloud-compute.html", "telecom-token.html"] },
   { href: "custom-software.html", title: "软件定制", group: ["custom-software.html"] },
   { href: "industry-solutions.html", title: "行业方案", group: ["industry-solutions.html", "cases-insights.html"] },
-  { href: "about.html", title: "关于我们", group: ["about.html", "ecosystem-partners.html", "channel-capital.html"] }
+  { href: "about.html", title: "关于我们", group: ["about.html", "ecosystem-partners.html", "channel-capital.html", "channel-activation.html"] }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -76,14 +76,14 @@ function initSharedChrome() {
               <p class="footer-about">软件、算力与数字化基础设施服务商，总部位于江苏省苏州市吴中经济开发区。</p>
             </div>
             <div class="footer-col">
-              <h4>业务</h4>
+              <h4>业务板块</h4>
               <ul>
-                <li><a href="software-licensing.html">软件与信创</a></li>
-                <li><a href="cloud-compute.html">智算与算力</a></li>
-                <li><a href="telecom-token.html">Token 服务</a></li>
-                <li><a href="custom-software.html">软件定制</a></li>
-                <li><a href="channel-capital.html">渠道与项目</a></li>
-                <li><a href="security-data.html">数据与安全</a></li>
+                <li><a href="wps.html">WPS 办公专区</a></li>
+                <li><a href="channel-activation.html">商机路由与渠道赋能</a></li>
+                <li><a href="software-licensing.html">软件正版化与信创</a></li>
+                <li><a href="cloud-compute.html">智算算力与Token</a></li>
+                <li><a href="custom-software.html">制造业软件定制</a></li>
+                <li><a href="channel-capital.html">渠道项目资金协同</a></li>
               </ul>
             </div>
             <div class="footer-col">
