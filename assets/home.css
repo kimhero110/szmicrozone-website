@@ -84,7 +84,7 @@ ul { padding: 0; list-style: none; }
 .brand { display: flex; flex-direction: column; line-height: 1.15; }
 .brand-name { font-family: var(--serif-cn); font-size: 20px; font-weight: 600; color: var(--navy); letter-spacing: .08em; }
 .brand-sub { font-size: 10px; letter-spacing: .28em; color: var(--ink-soft); margin-top: 4px; }
-.nav-links { display: flex; gap: 34px; }
+.nav-links { display: flex; gap: 22px; }
 .nav-links a { font-size: 14px; letter-spacing: .06em; position: relative; padding: 6px 0; color: var(--ink); }
 .nav-links a::after {
   content: ""; position: absolute; left: 0; bottom: 0; height: 1px; width: 0;

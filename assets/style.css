@@ -65,7 +65,7 @@ img { display: block; max-width: 100%; }
 .brand { display: flex; flex-direction: column; line-height: 1.15; flex-shrink: 0; }
 .brand-title { font-family: var(--serif-cn); font-size: 20px; font-weight: 600; color: var(--navy); letter-spacing: .08em; }
 .brand-sub { font-size: 10px; letter-spacing: .28em; color: var(--ink-soft); margin-top: 4px; text-transform: uppercase; }
-.nav-links { display: flex; align-items: center; gap: 34px; }
+.nav-links { display: flex; align-items: center; gap: 22px; }
 .nav-link { font-size: 14px; letter-spacing: .06em; position: relative; padding: 6px 0; color: var(--ink); }
 .nav-link::after {
   content: ""; position: absolute; left: 0; bottom: 0; height: 1px; width: 0;

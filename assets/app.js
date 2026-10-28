@@ -3,15 +3,16 @@
  * Shared chrome (navigation / footer), reveal motion, calculators & filters
  */
 
-// 主导航（6 项）。group 用于让二级页面高亮所属栏目。
+// 主导航（8 项）。group 用于让二级页面高亮所属栏目。
 const NAV_ITEMS = [
   { href: "index.html", title: "首页", group: ["index.html"] },
   { href: "wps.html", title: "WPS 办公", group: ["wps.html", "wps-solutions.html", "wps-news.html", "wps-article.html"] },
+  { href: "channel-activation.html", title: "渠道赋能", group: ["channel-activation.html", "channel-capital.html"] },
   { href: "software-licensing.html", title: "软件与信创", group: ["software-licensing.html", "security-data.html"] },
   { href: "cloud-compute.html", title: "智算与Token", group: ["cloud-compute.html", "telecom-token.html"] },
   { href: "custom-software.html", title: "软件定制", group: ["custom-software.html"] },
   { href: "industry-solutions.html", title: "行业方案", group: ["industry-solutions.html", "cases-insights.html"] },
-  { href: "about.html", title: "关于我们", group: ["about.html", "ecosystem-partners.html", "channel-capital.html", "channel-activation.html"] }
+  { href: "about.html", title: "关于我们", group: ["about.html", "ecosystem-partners.html"] }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {

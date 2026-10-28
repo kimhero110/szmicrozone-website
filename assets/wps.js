@@ -3,6 +3,7 @@ const WPS_NAV = [
   ["wps.html", "产品总览"],
   ["wps-solutions.html", "行业应用"],
   ["wps-news.html", "新闻资讯"],
+  ["channel-activation.html", "渠道商机赋能"],
   ["wps.html#buy", "采购服务"]
 ];
 
